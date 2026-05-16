@@ -20,7 +20,6 @@ import {
   THEME_MODES,
   ThemeModeProvider,
   useThemeMode,
-  type ThemeMode,
 } from "../lib/theme-mode";
 
 export const Route = createFileRoute("/")({
@@ -1027,5 +1026,3 @@ function CommandCenter() {
   );
 }
 
-// silence unused
-void ThemeMode;
