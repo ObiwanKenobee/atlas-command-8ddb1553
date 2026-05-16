@@ -380,7 +380,7 @@ function AgentGrid() {
             <div key={a.id} className="bg-background/60 border border-border p-2 rounded-sm">
               <div className="text-[10px] font-mono text-foreground/40">{a.id}</div>
               <div className="flex items-center justify-between mt-1">
-                <div className={`size-1.5 ${c.bg} rounded-full ${a.pulse ? "animate-pulse-dot" : ""}`} />
+                <div className={`size-1.5 ${c.bg} rounded-full ${"pulse" in a && a.pulse ? "animate-pulse-dot" : ""}`} />
                 <span className={`text-[9px] font-bold uppercase ${c.text}`}>{a.state}</span>
               </div>
             </div>
